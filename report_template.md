@@ -48,6 +48,7 @@ Once the project is finished, summarize your experiences.
 
 - What would you do differently in a future but similar project?
 
+- Outcome, screenshots or similar.
 
 ## *Administrative details TBD*
 
