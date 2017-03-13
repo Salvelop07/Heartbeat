@@ -5,3 +5,6 @@ textemplate: report_template.md
 # convert the markdown template to pdf
 pdftemplate: report_template.md
 	pandoc -o report_template.pdf $<
+
+clean:
+	xargs -I % find -name % -delete < .gitignore
