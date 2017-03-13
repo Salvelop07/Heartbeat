@@ -24,6 +24,8 @@ Name and ID of each feature | Sha1 for the commit(s) that make up the feature | 
 ## Reflections
 Reflect on how the work worked.
 
+Discuss any deviations from the sprint commitment.
+
 For each practice practiced:
 
 - Did your experience correspond to or contradict with what literature claims?
@@ -33,6 +35,7 @@ For each practice practiced:
       can be interesting.
 
 - How efficient was the practice, given the time it took to use?
+
 
 
 # Postmortem
