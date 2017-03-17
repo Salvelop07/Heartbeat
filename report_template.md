@@ -7,6 +7,12 @@ author:
 
 This is a basic template for the project report. Fill it out over the course of the project.
 
+# Project Description
+Write a brief description of your software,
+including the target platform(s),
+programming language,
+and what the software will do.
+
 # Sprint Log
 Write one log per sprint.
 
@@ -50,10 +56,10 @@ Once the project is finished, summarize your experiences.
 
 - Outcome, screenshots or similar.
 
-## *Administrative details TBD*
+## Administrative details
 
-- *Deadlines, for each sprint, and for the final report.*
+- Send in the sprint reports and postmortem report via mail
+  to Terese and Magnus. Deadlines are in the course schedule.
 
-- *Word limit for the postmortem part.*
+- The postmortem part shall be 2000-3000 words long.
 
-- *Hand-in instructions.*
