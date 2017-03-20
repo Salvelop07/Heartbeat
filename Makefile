@@ -10,5 +10,9 @@ pdftemplate: report_template.md
 wordtemplate: report_template.md
 	pandoc -o report_template.docx $<
 
+# convert the markdown requirements to pdf
+requirements: project.md
+	pandoc -o project_meta_requirements.pdf $<
+
 clean:
 	xargs -I % find -name % -delete < .gitignore
