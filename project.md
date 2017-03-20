@@ -1,34 +1,36 @@
 # Project Meta Requirements
 
-- git and github for version control
+- Use git and github for version control.
 
-- issue tracker
-    - prioritized product backlog
-    - sprint commitment
-    - should have automatic traceability to git commits
-    - suggestions: github issue tracker or Trello
+- Use an issue tracker.
+    - To keep a prioritized product backlog.
+    - And a prioritized commitment for the current sprint.
+    - The tracker should have automatic traceability to git commits.
+    - We suggest using the github issue tracker, or optionally Trello.
 
-- Continuous Integration
-    - use for example Travis-CI
-    - lots of alternatives covered by https://github.com/larsbrinkhoff/lbForth
+- Build the software with Continuous Integration.
+    - For example Travis-CI.
+    - Lots of alternatives covered by https://github.com/larsbrinkhoff/lbForth/blob/master/build.md
 
-- repository, issue tracker, and build should be accessible
-  without any licence restrictions,
-  for all group members and supervisors
+- The repository, issue tracker, and builds shall be accessible
+  for all group members and supervisors.
 
-- Agile Practices - all should be possible to use in the project
+- It shall be possible to use all agile principles and practices (XP) in the project.
 
-- Vertical slice, customer value every sprint
+- Divide the project into vertical slices, that is,
+  divide features so end user value is delivered at least every sprint.
 
-- GUI
+- There shall be a GUI.
 
-- Tests for "all" code, for some definition of "all"
-    - Logic/behaviour to test
+- As a rule-of-thumb, write tests for all code.
+  If some parts of the code proves difficult to test, keep track of why.
+    - As an addendum, the software must have some logic/behavior to test.
 
-- The software should be runnable by the supervisors,
-  platform independent.
+- The software should be runnable by the supervisors.
+  It shall therefore not be locked to or depend on any closed platform.
 
-- Knowledge transfer within the group.
-  Use the Agile Practices for this,
+- You may need knowledge transfer within the group,
+  as not every team member can be expected to initially have expertise in every area of the project.
+  Use the agile practices for this,
   for example pair programming,
-  integrate into group work.
+  and integrate it into the group work.
