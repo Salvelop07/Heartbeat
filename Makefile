@@ -14,5 +14,7 @@ wordtemplate: report_template.md
 requirements: project.md
 	pandoc -o project_meta_requirements.pdf $<
 
+all: textemplate pdftemplate wordtemplate requirements
+
 clean:
 	xargs -I % find -name % -delete < .gitignore
