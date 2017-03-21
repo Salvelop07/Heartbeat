@@ -1,7 +1,7 @@
-#addons:
-#   apt:
-#     packages:
-#       pandoc
+addons:
+  apt:
+    packages:
+      pandoc
 
 script:
   make all
