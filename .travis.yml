@@ -1,3 +1,6 @@
+language: c # not really, but using make
+dist: trusty # has a newer version of pandoc
+
 addons:
   apt:
     packages:
