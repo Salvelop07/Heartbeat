@@ -6,3 +6,12 @@ addons:
 
 script:
   make all
+
+deploy:
+  provider: releases
+  api_key:
+    secure: $GH_TOKEN
+  file: out/*
+  skip_cleanup: true
+  on:
+    tags: true
