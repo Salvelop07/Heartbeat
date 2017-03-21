@@ -11,6 +11,7 @@ deploy:
   provider: releases
   api_key:
     secure: $GH_TOKEN
+  file_glob: true
   file: out/*
   skip_cleanup: true
   on:
