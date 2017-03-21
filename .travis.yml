@@ -6,6 +6,7 @@ addons:
     packages:
       pandoc
       texlive
+      lmodern
 
 script:
   make all
