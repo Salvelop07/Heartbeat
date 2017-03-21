@@ -2,6 +2,7 @@ addons:
   apt:
     packages:
       pandoc
+      texlive
 
 script:
   make all
