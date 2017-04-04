@@ -2,7 +2,7 @@ PANDOC ?= pandoc
 
 # convert the markdown template to latex
 textemplate: report_template.md
-	$(PANDOC) -N -o out/report_template.tex $<
+	$(PANDOC) -s -N -o out/report_template.tex $<
 
 # convert the markdown template to pdf
 pdftemplate: report_template.md
