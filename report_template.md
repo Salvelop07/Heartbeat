@@ -59,7 +59,10 @@ Once the project is finished, summarize your experiences.
 ## Administrative details
 
 - Send in the sprint reports and postmortem report via mail
-  to Terese and Magnus. Deadlines are in the course schedule.
+  to Terese and Magnus.
+  Submit in PDF format with your group number as
+  filename (ex: group-17.pdf).
+  Deadlines are in the course schedule.
 
 - The postmortem part shall be 2000-3000 words long.
 
