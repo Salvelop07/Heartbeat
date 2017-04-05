@@ -13,8 +13,14 @@ including the target platform(s),
 programming language,
 and what the software will do.
 
+Link to your:
+
+- git repository
+- issue tracker
+- continuous integration builds
+
 # Sprint Log
-Write one log per sprint.
+Write one log per sprint, containing the following subsections:
 
 ## Commitment
 List the features/stories the team commits to finish during the sprint.
@@ -45,7 +51,7 @@ For each practice practiced:
 
 
 # Postmortem
-Once the project is finished, summarize your experiences.
+Once the project is finished, summarize your experiences, considering the following:
 
 - For each practice, reflect on the combined experience from all sprints.
 
