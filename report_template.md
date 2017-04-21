@@ -1,5 +1,5 @@
 % Agile Development Processes Project Report  
-Team X
+  Team X
 % Magnus Ågren; Terese Besker
 %
 
