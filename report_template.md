@@ -1,5 +1,5 @@
 ---
-title: 'Agile Development Processes Project Report'
+title: 'Agile Development Processes Project Report\newline Team X'
 author:
 - Magnus Ågren
 - Terese Besker
@@ -11,7 +11,8 @@ This is a basic template for the project report. Fill it out over the course of 
 Write a brief description of your software,
 including the target platform(s),
 programming language,
-and what the software will do.
+a name for the software,
+and what it will do.
 
 Link to your:
 
@@ -30,11 +31,14 @@ Log what was accomplished, and how.
 
 Feature | Commits  | Group members | Effort | Practices
 ----------------|----------------|----------------|----------------|----------------
-Name and ID of each feature | Sha1 for the commit(s) that make up the feature | Names of the group members who developed the feature | The development effort expended, in story points or other unit of choice | The agile practices practiced when developing the feature
-
+Name and ID of each feature | Sha1 for the commit(s) that make up the feature | Names of the group members who developed the feature | Development effort, estimated and spent, in story points or other unit of choice. | The agile practices practiced when developing the feature
+*Example #1* | `abcd0123` | *Terese, Magnus* | *Gummy bears, est:2 spent:3* | *Pair programming, Small releases*
 
 ## Reflections
 Reflect on how the work worked.
+This data will form the basis for your final reflection.
+As the postmortem will be a writeup, it's fine to use shorthand notes, bullet list, and similar.
+Try to keep within 1000-1500 words.
 
 Discuss any deviations from the sprint commitment.
 
@@ -47,7 +51,6 @@ For each practice practiced:
       can be interesting.
 
 - How efficient was the practice, given the time it took to use?
-
 
 
 # Postmortem
