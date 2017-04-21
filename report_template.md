@@ -1,6 +1,7 @@
 % Agile Development Processes Project Report  
 Team X
 % Magnus Ågren; Terese Besker
+%
 
 This is a basic template for the project report. Fill it out over the course of the project.
 
