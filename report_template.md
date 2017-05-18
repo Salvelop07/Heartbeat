@@ -18,7 +18,7 @@ Link to your:
 - issue tracker
 - continuous integration builds
 
-# Sprint Log
+# Sprint Log 1
 Write one log per sprint, containing the following subsections:
 
 ## Commitment
@@ -49,6 +49,13 @@ For each practice practiced:
       can be interesting.
 
 - How efficient was the practice, given the time it took to use?
+
+
+# Sprint Log 2
+*As for the previous sprint.*
+
+# Sprint Log 3
+*As for the previous sprints.*
 
 
 # Postmortem
