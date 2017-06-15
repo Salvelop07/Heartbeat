@@ -26,11 +26,15 @@ List the features/stories the team commits to finish during the sprint.
 
 ## Work Done
 Log what was accomplished, and how.
+Please report on all activities; for example, in addition to coding, planning and design discussion.
 
 Feature | Commits  | Group members | Effort | Practices
 ----------------|----------------|----------------|----------------|----------------
 Name and ID of each feature | Sha1 for the commit(s) that make up the feature | Names of the group members who developed the feature | Development effort, estimated and spent, in story points or other unit of choice. | The agile practices practiced when developing the feature
 *Example #1* | `abcd0123` | *Terese, Magnus* | *Gummy bears, est:2 spent:3* | *Pair programming, Small releases*
+
+### To be elaborated for 2018 edition:
+*Integrate contribution concept. Individual submission of that though.*
 
 ## Reflections
 Reflect on how the work worked.
