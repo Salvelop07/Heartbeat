@@ -1,6 +1,6 @@
 % Agile Development Processes Project Report  
-  Team X
-% Team Member A; Team Member B
+  Team 4
+% Evio Abazi; Lage Bergman; Jonathan Helsing; Ashish M Husain; Christoffer Karlsson; Oskar Lignell; Marufa Binte Mostafa
 %
 
 This is the project report template.
