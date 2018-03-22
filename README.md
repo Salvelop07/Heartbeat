@@ -7,7 +7,7 @@ and a template for the report.
 Both are in markdown format; the Travis build creates
 pdf, docx, and tex.
 
-This is an Ionic project!
+This is an awesome Ionic project!
 
 ## Communication
 Development team communication channel:
