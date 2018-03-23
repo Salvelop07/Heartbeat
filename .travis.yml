@@ -30,6 +30,8 @@ matrix:
       before_script:
         - npm install -g ionic cordova
         - cd testProject
+        - rm -rf node_modules
+        - npm i
       script:
         - ionic cordova build browser - prod
       deploy:
