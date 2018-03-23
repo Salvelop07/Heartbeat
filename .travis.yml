@@ -30,7 +30,7 @@ matrix:
       before_script:
         - npm install -g ionic cordova
       script:
-        - ionic cordovaa build brower - prod
+        - ionic cordova build browser - prod
       deploy:
         provider: pages
         skip-cleanup: true
