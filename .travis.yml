@@ -29,7 +29,7 @@ matrix:
         - "8.10.0"
       before_script:
         - npm install -g ionic cordova
-        - cd /testProject
+        - cd testProject
       script:
         - ionic cordova build browser - prod
       deploy:
