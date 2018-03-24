@@ -29,7 +29,7 @@ matrix:
         - "8.10.0"
       before_script:
         - npm install -g ionic cordova
-        - cd testProject # Should be updated to the correct path when we have set up the real project
+        #- cd testProject # Should be updated to the correct path when we have set up the real project
         - rm -rf node_modules # Added to correct some dependency errors
         - npm i # Added to correct some dependency errors
       script:
