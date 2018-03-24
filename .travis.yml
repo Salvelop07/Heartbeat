@@ -19,7 +19,7 @@ matrix:
       file_glob: true
       file: out/*
       skip_cleanup: true
-      on:
+      on: 
         tags: true
   - language: node:js
     node_js:
