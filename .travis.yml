@@ -1,48 +1,40 @@
 matrix:
   include:
-    # For the md files to pdf conversion
-    - language: c
-      # stuff that is supposed to be done iwth node.js
-      before_install:
-        - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-        - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components 3
-      addons:
-        apt:
-          packages:
-            texlive
-            lmodern
-      script:
-        PANDOC=./pandoc make all
-      deploy:
-        provider: releases
-        api_key:
-          secure: $GH_TOKEN
-        file_glob: true
-        file: out/*
-        skip_cleanup: true
-        on:
-          tags: true
-    
-    # IONIC stuff
-    - language: node:js
-      node_js:
-        - "8.10.0"
-      before_script:
-        - npm install -g ionic cordova
-        #- cd testProject # Should be updated to the correct path when we have set up the real project
-        - rm -rf node_modules # Added to correct some dependency errors
-        - npm i # Added to correct some dependency errors
-      script:
-        - ionic cordova build browser - prod
-      deploy:
-        provider: pages
-        skip-cleanup: true
-        github-token: $GITHUB_TOKEN
-        keep-history: true
-        local_dir: www
-
-
-
-
+  - language: c
+    before_install:
+    - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+    - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components
+      3
+    addons:
+      apt:
+        packages: texlive lmodern
+    script: PANDOC=./pandoc make all
+    deploy:
+      provider: releases
+      api_key:
+        secure: "$GH_TOKEN"
+      file_glob: true
+      file: out/*
+      skip_cleanup: true
+      on:
+        tags: true
+  - language: node:js
+    node_js:
+    - 8.10.0
+    before_script:
+    - npm install -g ionic cordova
+    - rm -rf node_modules
+    - npm i
+    script:
+    - ionic cordova build browser - prod
+    deploy:
+      provider: pages
+      skip-cleanup: true
+      github-token: "$GITHUB_TOKEN"
+      keep-history: true
+      local_dir: www
 notifications:
-  travis encrypt "eda397group4:qJDEgEHMpRJtgrJ5pNYZBEFp" --add notifications.slack
+  matrix:
+  - travis encrypt "eda397group4:qJDEgEHMpRJtgrJ5pNYZBEFp" --add notifications.slack
+  slack:
+    secure: QzLRVmqRiG2VsJWRBk7rMmTpBoQso3CilJd0OYCwjqnv7YPboDQQPEYe5a22pLD4BDD+FWkTirISuDq4eFJY7qI3Qj8RYam85PWodlBqPIey6Fay28KJZReXRJZObBbCTKiCjNW5FOMgr+q/KJgUUCFKMhOChRTMSgR+mODWzxZ0KVOe5lB/LCL9Zc/PWq3nG9iaF6CvMA/XAyR6BWwTwJmZ3gSbpLPyz7QWWMGfIs6n/PmKxeRuct9JvSGsPsqFh6NZwDol+B0861JOwUk4XD5zfXMFH+p27wEuBscMsiSsr6dxf8O1NxMgzrGrxVNXb7L2MxbLc8qNyLd/S3qf/tww9dS7IUmngxH1H0BnKFx/vQMzEAAatPW6gLISQE8uERs4FxP4eJ9S6b5SEU9f+vHJAvSvLhlkK6DGgw2mk42PEoUGsn+Ja29Oql9rUIFMJRcATcA6fAXIZJJuaYCywoeJJUxAOCoX8XjSbMf/gaZkH/ASJOILPHL1Hxu0M9rdZXECPrB9KGp9cdRosHh7sqj6wzolbpAtFHSveqSSf41DU8yDufkEQmbWXYqRC/Rbo3+wza9RtK8B7rvVJetYQdYlD0wxLyOVnCNx3XVQR456ElB0sS8vWDQST/oIANiEFW4DeCfHzXEoffn+yALrTcLOiwSrGx+LqRD2I7jrUe8=
