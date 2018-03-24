@@ -27,6 +27,7 @@ matrix:
     - npm i
     script:
     - ionic cordova build browser - prod
+    - npm run test-ci
     deploy:
       provider: pages
       skip-cleanup: true
