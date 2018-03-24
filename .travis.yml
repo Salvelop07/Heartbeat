@@ -44,42 +44,5 @@ matrix:
 
 
 
-
-
-
-########## Old .travis.yml ##########
-# Kept for unknown reasons...
-
-
-#language: c # not really, but using make
-
-# pandoc is used to generate the output files
-# the pandoc version in the package management system is a tad old though
-# so tables don't turn out nice
-# install a recent version locally
-#before_install:
-#  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-#  - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components 3
-
-# pandoc needs LaTeX for pdf output
-# here the versions from the package system are ok
-#addons:
-#  apt:
-#    packages:
-#      texlive
-#      lmodern
-
-# the build step, details in the Makefile
-#script:
-#  PANDOC=./pandoc make all
-
-# for tagged versions, deploy the built files to github
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: $GH_TOKEN
-#  file_glob: true
-#  file: out/*
-#  skip_cleanup: true
-#  on:
-#    tags: true
+notifications:
+  travis encrypt "eda397group4:qJDEgEHMpRJtgrJ5pNYZBEFp" --add notifications.slack
