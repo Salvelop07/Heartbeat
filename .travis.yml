@@ -24,7 +24,9 @@ matrix:
   - language: node:js
     node_js:
     - 8.10.0
-    cache: yarn
+    cache:
+      directories:
+        - node_modules
     before_script:
     - npm install -g ionic cordova
     - rm -rf node_modules
