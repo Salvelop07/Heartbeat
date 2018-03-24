@@ -34,8 +34,7 @@ matrix:
     - sh -e /etc/init.d/xvfb start
     - npm i
     script:
-    - ionic cordova build browser - prod
-    - npm run test-ci
+      - npm run test-ci
     deploy:
       provider: pages
       skip-cleanup: true
