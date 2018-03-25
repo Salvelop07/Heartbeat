@@ -30,6 +30,8 @@ Please report on all activities; for example, in addition to coding, planning an
 
 When it comes to the continuous integration tool, we opted for Travis CI which was set up and configured to work with the Ionic project, unit testing, and proper notifications for builds from GitHub. Additionally, during the startup meeting, we made sure that everyone had the programs required, and that they work, to work with the Ionic project, i.e. that everyone's development environment was set up.
 
+A test suite was also created, using the Karma test runner in combination with the behavior-driven testing framework Jasmine. A simple test was also created for demonstration purposes, with the primary intention of ensuring that the connection between Travis CI and GitHub was configured properly. The test suite can be used primarily for unit testing, but an end-to-end testing framework such as Protractor might later be added as well.
+
 Feature | Time estimated | Time spent per team member
 --------|----------------|--------
 *#1* | *X hours* | *Jonathan Helsing: 7 hours, Member B: Z hours*
