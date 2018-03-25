@@ -1,32 +1,48 @@
-language: c # not really, but using make
-
-# pandoc is used to generate the output files
-# the pandoc version in the package management system is a tad old though
-# so tables don't turn out nice
-# install a recent version locally
-before_install:
-  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-  - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components 3
-
-# pandoc needs LaTeX for pdf output
-# here the versions from the package system are ok
-addons:
-  apt:
-    packages:
-      texlive
-      lmodern
-
-# the build step, details in the Makefile
-script:
-  PANDOC=./pandoc make all
-
-# for tagged versions, deploy the built files to github
-deploy:
-  provider: releases
-  api_key:
-    secure: $GH_TOKEN
-  file_glob: true
-  file: out/*
-  skip_cleanup: true
-  on:
-    tags: true
+matrix:
+  include:
+  - language: c
+    env:
+      global:
+        - MAKEFLAGS="-j 2"
+    before_install:
+    - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+    - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components
+      3 
+    addons:
+      apt:
+        packages: texlive lmodern
+    script: PANDOC=./pandoc make all
+    deploy:
+      provider: releases
+      api_key:
+        secure: "$GH_TOKEN"
+      file_glob: true
+      file: out/*
+      skip_cleanup: true
+      on: 
+        tags: true
+  - language: node:js
+    node_js:
+    - 8.10.0
+    cache:
+      directories:
+        - node_modules
+    before_script:
+    - npm install -g ionic cordova
+    - export CHROME_BIN=chromium-browser
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
+    - npm i
+    script:
+      - npm run test-ci
+    deploy:
+      provider: pages
+      skip-cleanup: true
+      github-token: "$GITHUB_TOKEN" 
+      keep-history: true
+      local_dir: www
+notifications:
+  matrix:
+  - travis encrypt "eda397group4:qJDEgEHMpRJtgrJ5pNYZBEFp" --add notifications.slack
+  slack:
+    secure: QzLRVmqRiG2VsJWRBk7rMmTpBoQso3CilJd0OYCwjqnv7YPboDQQPEYe5a22pLD4BDD+FWkTirISuDq4eFJY7qI3Qj8RYam85PWodlBqPIey6Fay28KJZReXRJZObBbCTKiCjNW5FOMgr+q/KJgUUCFKMhOChRTMSgR+mODWzxZ0KVOe5lB/LCL9Zc/PWq3nG9iaF6CvMA/XAyR6BWwTwJmZ3gSbpLPyz7QWWMGfIs6n/PmKxeRuct9JvSGsPsqFh6NZwDol+B0861JOwUk4XD5zfXMFH+p27wEuBscMsiSsr6dxf8O1NxMgzrGrxVNXb7L2MxbLc8qNyLd/S3qf/tww9dS7IUmngxH1H0BnKFx/vQMzEAAatPW6gLISQE8uERs4FxP4eJ9S6b5SEU9f+vHJAvSvLhlkK6DGgw2mk42PEoUGsn+Ja29Oql9rUIFMJRcATcA6fAXIZJJuaYCywoeJJUxAOCoX8XjSbMf/gaZkH/ASJOILPHL1Hxu0M9rdZXECPrB9KGp9cdRosHh7sqj6wzolbpAtFHSveqSSf41DU8yDufkEQmbWXYqRC/Rbo3+wza9RtK8B7rvVJetYQdYlD0wxLyOVnCNx3XVQR456ElB0sS8vWDQST/oIANiEFW4DeCfHzXEoffn+yALrTcLOiwSrGx+LqRD2I7jrUe8=
