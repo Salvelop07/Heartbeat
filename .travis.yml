@@ -14,7 +14,8 @@ matrix:
     script: PANDOC=./pandoc make all
     deploy:
       provider: releases
-      api_key: "$GH_TOKEN"
+      api_key:
+        secure: a1fb6566a536f8efe2848fa17938319259821fc2
       file_glob: true
       file: out/*
       skip_cleanup: true
@@ -34,12 +35,6 @@ matrix:
     - npm i
     script:
       - npm run test-ci
-    deploy:
-      provider: pages
-      skip-cleanup: true
-      github-token: "$GITHUB_TOKEN" 
-      keep-history: true
-      local_dir: www
 notifications:
   matrix:
   - travis encrypt "eda397group4:qJDEgEHMpRJtgrJ5pNYZBEFp" --add notifications.slack
