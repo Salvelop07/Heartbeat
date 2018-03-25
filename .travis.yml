@@ -15,7 +15,7 @@ matrix:
     deploy:
       provider: releases
       api_key:
-        secure: LlXP8VVeZY4us1Q9PTXrcgjlcm5XReieBdUYuZQpO/OQOkAeY4kZpBlcMG0KxYecSfVmH7GaMpGkPvKj4LiK70ODK1DDy0Ph5i8Bg1fbnuq6BwDvXPG+rfrWgsCHf+d0ffimNGOP0VoZkjN+FhBjqSLZi/dQB8YpR3zttVc0PGkWdfl90/svoMo4IqW2ek7HGmZM56rPVYhtJrh//i45G1E+OeIQoGBigYZZSKzEv47DTA8K2M5HLJaS3LlpKaP1Ds2PyxonRuCFFLZgmfSTYvDzmw2kObZL1OxBAsQpWdK7A3KrFzpcXD8oyx2IvBoxFTJDYT6Y6C5XuxLA7f/szZLjz5/Fb4LUlsCmR8+7gxfd2C+wMASMj9niphGM6xauYKIusHDLAfYIQDd/Axj2hjYd+QZTaawItVxn1M244II9Sl2oVMG7CMe1/RPamFVvIi/C9+fJInrkWv/TyvwZtFaiqj2dUrMifcCqMVOlthOvG8MMGNP91YTYIdoqrYXkwZImxjoQooFWJzriyb4WswVYJB090P/b3mgXPdhx70pbQMdGGp/K2ZxhTACiC/HH+v6moxlzRnR8eUCL2+T8DLtKfUcKftoFqxguQvuGrKsvvcBV8Cuz44pA+0a43vfvZvdZ8XM7RxuYSTWyGro/ZpnNjX545m5CbLurZTtO8eg=
+        secure: $GH_TOKEN
       file_glob: true
       file: out/*
       skip_cleanup: true
