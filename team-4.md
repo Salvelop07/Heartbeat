@@ -28,30 +28,35 @@ List the features/stories that the team committed to finish during the sprint.
 Log what was accomplished, and how.
 Please report on all activities; for example, in addition to coding, planning and design discussion.
 
+When it comes to the continuous integration tool, we opted for Travis CI which was set up and configured to work with the Ionic project, unit testing, and proper notifications for builds from GitHub. Additionally, during the startup meeting, we made sure that everyone had the programs required, and that they work, to work with the Ionic project, i.e. that everyone's development environment was set up.
+
 Feature | Time estimated | Time spent per team member
 --------|----------------|--------
-*Name and ID of each feature* | *X hours* | *Member A: Y hours, Member B: Z hours*
+*#1* | *X hours* | *Jonathan Helsing: 7 hours, Member B: Z hours*
 
 ## Reflections
-Reflect on how the work worked.
+
+Many of the tools used were discussed and went through together to make sure that everyone had the same basic knowledge of the tools and how to use them.
+
+<!-- Reflect on how the work worked.
 This data will form the basis for your final reflection.
 As the postmortem will be a writeup, it's fine to use shorthand notes, bullet list, and similar.
-Keep within 1000-1500 words.
+Keep within 1000-1500 words. -->
 
-Discuss any deviations from the sprint commitment.
+<!-- Discuss any deviations from the sprint commitment. -->
 
-Reflect on the agile practice practiced:
+<!-- Reflect on the agile practice practiced: -->
 
-- Did your experience correspond to or contradict with what literature claims?
+<!-- - Did your experience correspond to or contradict with what literature claims?
 
     - Analysis of why. Mostly interesting if something unexpected happens, but even
       if everything runs according to plan, reflecting on the underlying mechanisms
-      can be interesting.
+      can be interesting. -->
 
-- How did the practices interact?
-  Did they complement or counteract each other?
+<!-- - How did the practices interact?
+  Did they complement or counteract each other? -->
 
-- How efficient were the practices, given the time they took to use?
+<!-- - How efficient were the practices, given the time they took to use? -->
 
 
 # Sprint X Log
