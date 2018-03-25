@@ -5,8 +5,8 @@ matrix:
       global:
         - MAKEFLAGS="-j 2"
     before_install:
-    - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-    - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components
+      - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+      - ar p pandoc-1.19.2.1-1-amd64.deb data.tar.gz | tar zx ./usr/bin/pandoc --strip-components
       3 
     addons:
       apt:
@@ -14,8 +14,7 @@ matrix:
     script: PANDOC=./pandoc make all
     deploy:
       provider: releases
-      api_key:
-        secure: "$GH_TOKEN"
+      api_key: "$GH_TOKEN"
       file_glob: true
       file: out/*
       skip_cleanup: true
