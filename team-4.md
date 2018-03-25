@@ -32,6 +32,8 @@ When it comes to the continuous integration tool, we opted for Travis CI which w
 
 A test suite was also created, using the Karma test runner in combination with the behavior-driven testing framework Jasmine. A simple test was also created for demonstration purposes, with the primary intention of ensuring that the connection between Travis CI and GitHub was configured properly. The test suite can be used primarily for unit testing, but an end-to-end testing framework such as Protractor might later be added as well.
 
+To ensure a consistent code style and to enable us to follow best practices, a TSLint configuration was created for static code analysis. The configuration contains most of the recommended TSLint rules for TypeScript. TSLint can be integrated with various editors, such as Visual Studio Code, for instant feedback.
+
 Feature | Time estimated | Time spent per team member
 --------|----------------|--------
 *#1* | *X hours* | *Jonathan Helsing: 7 hours, Member B: Z hours*
