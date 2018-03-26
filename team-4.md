@@ -12,10 +12,9 @@ The initial description given by the customer is as follows:
 “Hospital Horror: I work in a hospital, and we are struggling to keep track of our patients. It is such a difficult process which requires knowing; any treatments they have had, which doctor is treating them, their allergies, the doctor’s diagnosis. We desperately need an app which can tell us all of these details about a patient.”
 The application is developed using Ionic, a cross-platform mobile framework built on top of AngularJS and Apache Cordova. The backend database is developed using Firebase. Ionic uses TypeScript for scripting and HTML with CSS for representing visual components.
 
-GitHub repository: https://github.com/jHelsing/Heartbeat
-Issue tracker: https://trello.com/b/nf2rvUqW/development
-Continuous integration builds: https://travis-ci.org/jHelsing/EDA397_group_4
-
+- GitHub repository: https://github.com/jHelsing/Heartbeat
+- Issue tracker: https://trello.com/b/nf2rvUqW/development
+- Continuous integration builds: https://travis-ci.org/jHelsing/Heartbeat/
 
 # Sprint 1 Log
 
@@ -38,7 +37,7 @@ To ensure a consistent code style and to enable us to follow best practices, a T
 
 <!--- *Name and ID of each feature* | *X hours* | *Member A: Y hours, Member B: Z hours* --->
 Feature | Time estimated | Time spent per team member
---------|----------------|--------
+------------|----------|---------------------------
 *1 As developers we want a “Hello World” app pushed to GitHub* | * * | * *
 *1.1 Initial project meeting, Sprint 1 planning* | *4 hours* |	*Evio Abazi: 4 hours, Ashish M Husain: 4 hours, Lage Bergman: 4 hours, Jonathan Helsing: 4 hours, Christoffer Karlsson: 4 hours, Oskar Lignell: 4 hours, Marufa Binte Mostafa: 4 hours*
 *1.2 Add .gitignore* |	*0.5 hours*	|	*Jonathan Helsing: 0.5 hours*
