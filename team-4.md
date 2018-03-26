@@ -36,29 +36,19 @@ When it comes to the continuous integration tool, we opted for Travis CI which w
 A test suite was also created, using the Karma test runner in combination with the behaviour-driven testing framework Jasmine. A simple test was also created for demonstration purposes, with the primary intention of ensuring that the connection between Travis CI and GitHub was correctly configured. The test suite can be used primarily for unit testing, but an end-to-end testing framework such as Protractor might later be added as well.
 To ensure a consistent code style and to enable us to follow best practices, a TSLint configuration was created for static code analysis. The configuration contains most of the recommended TSLint rules for TypeScript. TSLint can be integrated with various editors, such as Visual Studio Code, for instant feedback.
 
+<!--- *Name and ID of each feature* | *X hours* | *Member A: Y hours, Member B: Z hours* --->
 Feature | Time estimated | Time spent per team member
 --------|----------------|--------
-<!--- *Name and ID of each feature* | *X hours* | *Member A: Y hours, Member B: Z hours* --->
-*1 As developers we want a “Hello World” app pushed to GitHub* | ** | **
-
-*1.1 Initial project meeting / Sprint 1 planning *	| *4 hours* |	*Evio Abazi: 4 hours, Ashish M Husain: 4 hours, Lage Bergman: 4 hours, Jonathan Helsing: 4 hours, Christoffer Karlsson: 4 hours, Oskar Lignell: 4 hours, Marufa Binte Mostafa: 4 hours*
-
-*1.2 Add .gitignore*				|	*0.5 hours*	|	*Jonathan Helsing: 0.5 hours*
-
-*1.3 Setup Travis*				|	*4 hours*	|	*Jonathan Helsing: 4 hours, Christoffer Karlsson: 1 hour*
-
-*1.4 Add TA’s to git repo (+ slack, trello, etc.)*	|	*3 hours* 	|	*Evio Abazi: 0.5 hours, Jonathan Helsing: 0.5 hours, Lage Bergman: 0.5 hours*
-
+*1 As developers we want a “Hello World” app pushed to GitHub* | * * | * *
+*1.1 Initial project meeting / Sprint 1 planning* | *4 hours* |	*Evio Abazi: 4 hours, Ashish M Husain: 4 hours, Lage Bergman: 4 hours, Jonathan Helsing: 4 hours, Christoffer Karlsson: 4 hours, Oskar Lignell: 4 hours, Marufa Binte Mostafa: 4 hours*
+*1.2 Add .gitignore* |	*0.5 hours*	|	*Jonathan Helsing: 0.5 hours*
+*1.3 Setu7 p Travis* *4 hours*|	*Jonathan Helsing: 4 hours, Christoffer Karlsson: 1 hour*
+*1.4 Add TA’s to git repo (+ slack, trello, etc.)*|	*3 hours* |	*Evio Abazi: 0.5 hours, Jonathan Helsing: 0.5 hours, Lage Bergman: 0.5 hours*
 *1.5 Initiate an Ionic Project*		|	*14 hours*	| 	*Evio Abazi: 2 hours, Ashish M Husain: 3 hours, Lage Bergman: 2 hours, Jonathan Helsing: 2 hours, Christoffer Karlsson: 2 hours, Oskar Lignell: 4 hours, Marufa Binte Mostafa: 3 hours*
-
 *1.6 Add TSLint configuration* | *2 hours* | *Christoffer Karlsson: 2 hours*
-
 *1.7 Create one simple unit test to make sure Travis is able to handle it*	 | *3 hours* |	*Christoffer Karlsson: 3 hours*
-
 *1.8 Report Sprint 1*				|	*4 hours*	|	*Ashish M Husain: 1 hour, Christoffer Karlsson: 0.5 hours, Oskar Lignell: 1 hour, Lage Bergman: 1 hours, Jonathan Helsing: 0.5 hours*
-
 *1.9 Self Study of Ionic Framework/Github* | *25 hours* |	*Evio Abazi: 4  hours, Ashish M Husain: 4 hours, Lage Bergman: 3 hours, Jonathan Helsing: 4 hours, Christoffer Karlsson: 3 hours, Oskar Lignell: 4 hours, Marufa Binte Mostafa: 3 hours*
-
 
 ## Reflections
 
